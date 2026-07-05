@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>// versiones</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #000;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+    padding: 40px 20px;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 14px; margin-bottom: 30px; opacity: 0.6; }
+  .manifiesto { margin-bottom: 40px; }
+  .manifiesto p { margin-bottom: 16px; opacity: 0.85; }
+  .rumores {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #00ff41;
+    opacity: 0.6;
+    font-size: 12px;
+  }
+  .rumores p { margin-bottom: 8px; }
+  .prompt { margin-top: 40px; }
+  .prompt label { display: block; margin-bottom: 10px; opacity: 0.6; font-size: 12px; }
+  input {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    font-family: inherit;
+    padding: 10px 14px;
+    width: 100%;
+    max-width: 320px;
+    outline: none;
+  }
+  button {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    font-family: inherit;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  button:hover { background: #00ff41; color: #000; }
+  #msg { margin-top: 20px; font-size: 12px; min-height: 16px; }
+  .error { color: #ff3860; }
+  .ok { color: #00ff41; }
+  a { color: #00ff41; text-decoration: none; opacity: 0.5; }
+  a:hover { opacity: 1; }
+  .back { margin-top: 60px; display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>// capa 02 — versiones</h1>
+
+  <div class="manifiesto">
+    <p>// nunca dije una palabra y ya hablaban por mí.</p>
+    <p>// el pueblo inventa rápido cuando el silencio dice sí.</p>
+  </div>
+
+  <div class="rumores">
+    <p>// que si lyon</p>
+    <p>// que si marsella</p>
+    <p>// que si barcelona</p>
+    <p>// que si andorra</p>
+    <p>// que si milán</p>
+  </div>
+
+  <div class="prompt">
+    <label>nvll@versiones:~$ ¿qué soy realmente?</label>
+    <input type="text" id="clave" autocomplete="off" spellcheck="false" placeholder="...">
+    <button onclick="verificar('versiones')">acceder</button>
+    <div id="msg"></div>
+  </div>
+
+  <a href="index.html" class="back">[← volver]</a>
+</div>
+
+<script src="arg.js"></script>
+</body>
+</html>
