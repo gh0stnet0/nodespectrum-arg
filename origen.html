@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>// origen</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #000;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+    padding: 40px 20px;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 14px; margin-bottom: 30px; opacity: 0.6; }
+  .manifiesto { margin-bottom: 40px; }
+  .manifiesto p { margin-bottom: 16px; opacity: 0.85; }
+  .coordenadas {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #00ff41;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .prompt { margin-top: 40px; }
+  .prompt label { display: block; margin-bottom: 10px; opacity: 0.6; font-size: 12px; }
+  input {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    font-family: inherit;
+    padding: 10px 14px;
+    width: 100%;
+    max-width: 320px;
+    outline: none;
+  }
+  button {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    font-family: inherit;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  button:hover { background: #00ff41; color: #000; }
+  #msg { margin-top: 20px; font-size: 12px; min-height: 16px; }
+  .error { color: #ff3860; }
+  .ok { color: #00ff41; }
+  a { color: #00ff41; text-decoration: none; opacity: 0.5; }
+  a:hover { opacity: 1; }
+  .back { margin-top: 60px; display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>// capa 01 — origen</h1>
+
+  <div class="manifiesto">
+    <p>// aquí no eres de aquí ni de allá. eres de en medio.</p>
+    <p>// dos banderas en la sangre y ninguna en el remedio.</p>
+    <p>// el pueblo respira despacio, pero nunca duerme del todo.</p>
+  </div>
+
+  <div class="coordenadas">
+    34.2167°N, 5.9833°W
+  </div>
+
+  <div class="prompt">
+    <label>nvll@origen:~$ ¿qué hay en esas coordenadas?</label>
+    <input type="text" id="clave" autocomplete="off" spellcheck="false" placeholder="...">
+    <button onclick="verificar('origen')">acceder</button>
+    <div id="msg"></div>
+  </div>
+
+  <a href="index.html" class="back">[← volver]</a>
+</div>
+
+<script src="arg.js"></script>
+</body>
+</html>
